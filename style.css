@@ -1,0 +1,342 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-color: #fefefe;
+    color: #333;
+    transition: background-color 0.4s, color 0.4s;
+}
+
+.container {
+    width: 85%;
+    margin: 0 auto;
+}
+
+/* Navbar */
+header {
+    background-color: #00416A;
+    padding: 10px 0;
+}
+
+header nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #FFD700;
+}
+
+.dark-mode-btn {
+    background-color: #ff6b6b;
+    border: none;
+    padding: 7px 15px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.dark-mode-btn:hover {
+    background-color: #ff4757;
+}
+
+/* Hero Section */
+#hero {
+    background: linear-gradient(rgba(0, 65, 106, 0.7), rgba(0, 65, 106, 0.7)), url('https://via.placeholder.com/1200x600?text=Hero+Image') center/cover no-repeat;
+    color: white;
+    padding: 120px 0;
+    text-align: center;
+}
+
+#hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+#hero p {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+}
+
+.cta-btn {
+    background-color: #FFD700;
+    color: #00416A;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.cta-btn:hover {
+    background-color: #00416A;
+    color: #FFD700;
+}
+
+/* About Section */
+#about {
+    padding: 60px 0;
+    text-align: center;
+}
+
+#about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+/* Projects Section */
+#projects {
+    background-color: #f0f0f0;
+    padding: 60px 0;
+    text-align: center;
+}
+
+#projects h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.project {
+    display: inline-block;
+    width: 40%;
+    margin: 20px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    transition: transform 0.3s;
+}
+
+.project img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.project h3 {
+    margin-top: 15px;
+    font-size: 1.5rem;
+}
+
+.project:hover {
+    transform: scale(1.05);
+}
+
+/* Contact Section */
+#contact {
+    background-color: #e9e9e9;
+    padding: 60px 0;
+}
+
+#contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+form {
+    width: 50%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+form button {
+    background-color: #00416A;
+    color: white;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+form button:hover {
+    background-color: #FFD700;
+}
+
+/* Footer */
+footer {
+    background-color: #00416A;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+footer .social-links {
+    list-style-type: none;
+    text-align: center;
+}
+
+footer .social-links li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+footer .social-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+footer .social-links li a:hover {
+    color: #FFD700;
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background-color: #333;
+    color: #fefefe;
+}
+
+body.dark-mode header {
+    background-color: #222;
+}
+
+body.dark-mode #hero {
+    background: linear-gradient(rgba(0, 65, 106, 0.9), rgba(0, 65, 106, 0.9)), url('https://via.placeholder.com/1200x600?text=Hero+Image') center/cover no-repeat;
+}
+
+body.dark-mode #projects {
+    background-color: #222;
+}
+
+body.dark-mode #contact {
+    background-color: #333;
+}
+
+
+
+body.dark-mode .cta-btn {
+    background-color: #333;
+    color: #FFD700;
+}
+
+body.dark-mode .cta-btn:hover {
+    background-color: #FFD700;
+    color: #333;
+}
+
+body.dark-mode footer {
+    background-color: #222;
+}
+
+body.dark-mode footer .social-links li a {
+    color: #FFD700;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Mobile devices */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    header nav ul {
+        padding: 0;
+    }
+
+    header nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    #hero {
+        padding: 80px 0;
+    }
+
+    #hero h1 {
+        font-size: 2.5rem;
+    }
+
+    #hero p {
+        font-size: 1.2rem;
+    }
+
+    .cta-btn {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+
+    #about h2 {
+        font-size: 2rem;
+    }
+
+    #projects .project {
+        width: 80%;
+        margin: 20px auto;
+    }
+
+    #contact form {
+        width: 80%;
+    }
+}
+
+/* Tablet devices */
+@media screen and (max-width: 1024px) {
+    #hero {
+        padding: 100px 0;
+    }
+
+    #hero h1 {
+        font-size: 2.8rem;
+    }
+
+    #hero p {
+        font-size: 1.3rem;
+    }
+
+    .cta-btn {
+        font-size: 1.1rem;
+        padding: 12px 25px;
+    }
+
+    #projects .project {
+        width: 45%;
+        margin: 20px;
+    }
+
+    #about h2 {
+        font-size: 2.3rem;
+    }
+}
