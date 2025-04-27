@@ -14,7 +14,7 @@ body {
 }
 
 .container {
-    width: 95%;
+    width: 85%;
     margin: 0 auto;
 }
 
@@ -303,7 +303,7 @@ body.dark-mode footer .social-links li a {
     }
 
     #projects .project {
-        width: 80%;
+        width: 95%;
         margin: 20px auto;
     }
 
